@@ -362,14 +362,40 @@ div.footer h6 {
 }
 
 @media only screen and (max-width: 640px) {
+    
     ul.nav-links {
         background-image: url("logo/listimage.png");
         height: 45px;
         width: 45px;
         float: right;
-        /* background-color: #304353; */
+        transition: width 2s height 2s;
     }
+
+    ul.nav-links:hover {
+        width: 47px;
+        height: 47px;
+    }
+
     .nav-links li {
         display: none;
+    }
+
+    div ul.nav-links li a {
+        text-decoration: none;
+        background-color: ghostwhite;
+        display: block;
+        box-shadow: 3px, 4px, 3px, 2px, ghostwhite;
+        border: 2px, solid, purple;
+        width: 160px;
+        color: black;
+    }
+
+    div ul.nav-links li a:hover {
+        background-color: ghostwhite;
+
+    }
+
+    .show {
+        display: block;
     }
 }
