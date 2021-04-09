@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+/* Phone resolution: 960 x 640;
+   Tab resolution: 1024 x 768;
+   laptop resolution: 1280 x 800;
+   big screen resolution: 2560 x 1440; */
+
 * {
     margin: 0;
     padding: 0;
@@ -347,6 +352,24 @@ div.footer h6 {
 }
 
 
-@media screen and (max-width: px) {
+@media only screen and (max-width: 1024px) {
+    
+    div.hero-background-pos {
+        color: #A6A5AA;
+        display: none;
+    }  
+    
+}
 
+@media only screen and (max-width: 640px) {
+    ul.nav-links {
+        background-image: url("logo/listimage.png");
+        height: 45px;
+        width: 45px;
+        float: right;
+        /* background-color: #304353; */
+    }
+    .nav-links li {
+        display: none;
+    }
 }
