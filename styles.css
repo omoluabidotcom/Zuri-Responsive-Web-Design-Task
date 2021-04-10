@@ -366,13 +366,23 @@ div.footer h6 {
     ul.nav-links {
         background-image: url("logo/listimage.png");
         height: 45px;
-        width: 45px;
+        width: 48px;
         float: right;
         transition: width 2s height 2s;
+        position: absolute;
+        left: 375px;
+    }
+
+    .nav-bar {
+        position: relative;
+    }
+
+    .drop-button {
+        
     }
 
     ul.nav-links:hover {
-        width: 47px;
+        width: 50px;
         height: 47px;
     }
 
@@ -390,7 +400,7 @@ div.footer h6 {
         color: black;
     }
 
-    div ul.nav-links li a:hover {
+    .nav-links li a:hover {
         background-color: ghostwhite;
 
     }
