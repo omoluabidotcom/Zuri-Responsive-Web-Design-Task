@@ -6,7 +6,7 @@ function countFunc() {
 
 
 window.onclick = function(event) {
-    if(!event.target.matches('drop-button')) {
+    if(!event.target.matches('.drop-button')) {
         var dropdowns = document.getElementsByClassName("nav-links");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
